@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    tools:context=".Stridor">
+
+    <TextView
+        android:id="@+id/txtStridor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/kanit_medium"
+        android:gravity="center"
+        android:text="Stridor breath sound"
+        android:textColor="@color/white"
+        android:textSize="60sp" />
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/vdoStridor"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtStridor"/>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/btnPlay"
+        android:src="@drawable/ic_play"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/vdoStridor"/>
+
+    <RelativeLayout
+        android:layout_width="1000dp"
+        android:layout_height="450dp"
+        android:layout_below="@+id/btnPlay"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/white_boarder"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_medium"
+                android:text="• เป็นเสียงหายใจที่สูงและดังคล้ายเสียงครางดังติดต่อกัน "
+                android:textColor="@color/black"
+                android:textSize="32sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_medium"
+                android:text="• ถ้าเกิดจากการอุดตันในหลอดลมใหญ่ส่วนต้นบริเวณ palate, larynx หรือ epiglottis จะได้ยินชัดในช่วงหายใจ เข้า"
+                android:textColor="@color/black"
+                android:textSize="32sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_medium"
+                android:text="• ถ้าเกิดจากการอุดตันของหลอดลมส่วนล่างที่มักเกิด การสำลักสิ่งแปลกปลอมจะได้ยินชัดในช่วงหายใจออก"
+                android:textColor="@color/black"
+                android:textSize="32sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_medium"
+                android:text="• จะได้ยินเสียงนี้บริเวณหลอดลมคอ (Trachea)"
+                android:textColor="@color/black"
+                android:textSize="32sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_medium"
+                android:text="• อาจได้ยิน bronchial sound บริเวณอื่นได้ ถ้าเนื้อปอด บริเวณนั้นแข็งตัว (consolidation)"
+                android:textColor="@color/black"
+                android:textSize="32sp">
+
+            </TextView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="91dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+
+</RelativeLayout>

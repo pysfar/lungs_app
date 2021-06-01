@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    tools:context=".Playing">
+
+
+
+
+    <ImageView
+        android:id="@+id/question_image"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/kanit_medium"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <RelativeLayout
+        android:layout_below="@+id/question_text"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/group"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtScore"
+                    android:textColor="@color/white"
+                    android:text="0"
+                    android:fontFamily="@font/kanit_medium"
+                    android:textSize="40sp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/txtTotalQuestion"
+                    android:textColor="@color/white"
+                    android:text="1/4"
+                    android:fontFamily="@font/kanit_medium"
+                    android:textSize="40sp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:max="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnAnswerA"
+                android:text="Answer A"
+                android:fontFamily="@font/kanit_medium"
+                android:textColor="@color/a"
+                app:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:layout_margin="8dp"
+                android:textSize="36sp"
+                android:background="@drawable/white_boarder"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <Button
+                android:id="@+id/btnAnswerB"
+                android:text="Answer B"
+                android:fontFamily="@font/kanit_medium"
+                android:textColor="@color/a"
+                app:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:layout_margin="8dp"
+                android:background="@drawable/white_boarder"
+                android:layout_width="match_parent"
+                android:textSize="36sp"
+                android:layout_height="200dp"/>
+            <Button
+                android:id="@+id/btnAnswerC"
+                android:text="Answer C"
+                android:textColor="@color/a"
+                android:fontFamily="@font/kanit_medium"
+                app:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:layout_margin="8dp"
+                android:background="@drawable/white_boarder"
+                android:layout_width="match_parent"
+                android:textSize="36sp"
+                android:layout_height="200dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

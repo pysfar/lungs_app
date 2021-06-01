@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/white_boarder"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/e"
+            tools:targetApi="P">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/newUsername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/a"
+                android:hint="User Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColorHint="@color/a"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:met_baseColor="@color/a"
+                app:met_floatingLabel="normal"
+                app:met_textColor="@color/a" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/white_boarder"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/e"
+            tools:targetApi="P">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/a"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColorHint="@color/a"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:met_baseColor="@color/a"
+                app:met_floatingLabel="normal"
+                app:met_textColor="@color/a" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/white_boarder"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/e"
+            tools:targetApi="P">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/newPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/a"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColorHint="@color/a"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:met_baseColor="@color/a"
+                app:met_floatingLabel="normal"
+                app:met_textColor="@color/a" />
+        </FrameLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/white"
+            android:visibility="gone"
+            tools:targetApi="lollipop" />
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

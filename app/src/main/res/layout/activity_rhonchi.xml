@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    tools:context=".Rhonchi">
+
+    <TextView
+        android:id="@+id/txtRhon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/kanit_medium"
+        android:gravity="center"
+        android:text="Rhonchi breath sound"
+        android:textColor="@color/white"
+        android:textSize="70sp" />
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/vdoRhon"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtRhon"/>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/btnPlay"
+        android:src="@drawable/ic_play"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/vdoRhon"/>
+
+    <RelativeLayout
+        android:layout_width="1000dp"
+        android:layout_height="450dp"
+        android:layout_below="@+id/btnPlay"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/white_boarder"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_medium"
+                android:text="• เป็นเสียงที่ได้ยินอย่างต่อเนื่อง (continuous sound)"
+                android:textColor="@color/black"
+                android:textSize="36sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_medium"
+                android:text="• เกิดจากหลอดลมขนาดใหญ่ที่ตีบแคบลง"
+                android:textColor="@color/black"
+                android:textSize="36sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_medium"
+                android:text="• เป็นเสียงที่ดังและทุ้ม (high intensity, low pitch)"
+                android:textColor="@color/black"
+                android:textSize="36sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_medium"
+                android:text="• พบได้ในภาวะที่หลอดลมขนาดใหญ่มีเสมหะอุดตัน เยื่อบุ บวม หรือถูกกดจากภายนอก"
+                android:textColor="@color/black"
+                android:textSize="36sp">
+
+            </TextView>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="91dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+
+</RelativeLayout>

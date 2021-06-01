@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    tools:context=".Normal">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="571dp"
+        android:layout_height="204dp"
+        android:fontFamily="@font/kanit_medium"
+        android:text="Normal Breath Sounds"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+        <Button
+            android:id="@+id/buttonVes"
+            android:layout_width="500dp"
+            android:layout_height="120dp"
+            android:fontFamily="@font/kanit_medium"
+            android:text="Vesicular"
+            android:textStyle="bold"
+            style="@style/MyButton"
+            android:background="@drawable/white_boarder"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.402" />
+
+        <Button
+            android:id="@+id/buttonBron"
+            android:layout_width="500dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            style="@style/MyButton"
+            android:background="@drawable/white_boarder"
+            android:text="Bronchial"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.59000003" />
+
+        <Button
+            android:id="@+id/buttonBroncho"
+            android:layout_width="500dp"
+            android:layout_height="120dp"
+            android:textStyle="bold"
+            style="@style/MyButton"
+            android:background="@drawable/white_boarder"
+            android:text="Bronchovesicular"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.95"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

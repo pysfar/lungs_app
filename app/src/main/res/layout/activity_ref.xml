@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/a"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    tools:context=".How">
+
+    <LinearLayout
+        android:id="@+id/group1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/brown_boarder"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/e"
+            tools:targetApi="P">
+        <TextView
+            android:id="@+id/txtRef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="เอกสารอ้างอิง"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:fontFamily="@font/kanit_medium"
+           android:textAlignment="center"
+            android:textColor="@color/white"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="20dp"
+
+            android:background="@drawable/brown_boarder"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/e"
+            tools:targetApi="P">
+
+
+            <TextView
+                android:id="@+id/txtRef1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/kanit_medium"
+                android:text="1. Coggle.  (2020).  Chest: Heart and Lung.  สืบค้นเมื่อ 10 มกราคม 2564,
+	จาก https://coggle.it/diagram/XYC6EbstyIBb-M2f/t/heent-chest-heart-lung"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                />
+
+            <TextView
+                android:id="@+id/txtRef2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/kanit_medium"
+                android:text="2. Jennifer Robinson.  (2020).  Lung Sounds: What Do They Mean?.  สืบค้นเมื่อ 10 มกราคม 2564,
+        จาก https://www.webmd.com/lung/lung-sounds#1"
+                android:textSize="28dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txtRef3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="250dp"
+                android:fontFamily="@font/kanit_medium"
+                android:text="3. Medlineplus.  (2020).  Breath Sounds.  สืบค้นเมื่อ 10 มกราคม 2564,
+	จาก https://medlineplus.gov/ency/article/007535.htm "
+                android:textColor="@color/white"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/txtRef4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="350dp"
+                android:fontFamily="@font/kanit_medium"
+                android:text="4. Medzcool.  (2021).  Lung and Breath Sounds.  สืบค้นเมื่อ 9 มกราคม 2564,
+	จาก https://www.medzcool.com/"
+                android:textColor="@color/white"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/txtRef5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+
+                android:layout_marginTop="450dp"
+                android:fontFamily="@font/kanit_medium"
+                android:text="5. NursingCenter Blog.  (2016).  Breath Sounds: Test your knowledge.  สืบค้นเมื่อ 10 มกราคม 2564,
+	จาก https://www.nursingcenter.com/ncblog/october-2016/breath-sounds-test-your-knowledge"
+                android:textColor="@color/white"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/txtRef6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="595dp"
+                android:fontFamily="@font/kanit_medium"
+                android:layout_marginBottom="20dp"
+                android:text="6. รังสิมา ภูมิสวัสดิ์.  (2016).  การประเมินสุขภาพระบบหายใจ: ทรวงอกและปอด.  สืบค้นเมื่อ 9 มกราคม 	2564,	จาก  https://www.slideshare.net/rpoom/2016-respiratory-assessment"
+                android:textColor="@color/white"
+                android:textSize="28dp" />
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="850dp"
+        android:layout_marginTop="950dp"
+        android:backgroundTint="@color/a"
+        android:src="@drawable/ic_baseline_close_24" />
+
+
+
+</com.google.android.material.card.MaterialCardView>

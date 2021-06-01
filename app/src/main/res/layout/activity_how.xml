@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/a"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    tools:context=".How">
+
+    <LinearLayout
+        android:id="@+id/group1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/brown_boarder"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/e"
+            tools:targetApi="P">
+            <TextView
+                android:id="@+id/txtRef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="วิธีการใช้งาน"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:fontFamily="@font/kanit_medium"
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/brown_boarder"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/e"
+            tools:targetApi="P">
+
+            <TextView
+                android:id="@+id/txtHow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/kanit_medium"
+                android:text="1. Application นี้จะมีทั้งหมด 2 ฟังก์ชัน โดยฟังก์ชันแรกคือ Learning และฟังก์ชันที่ 2 คือ testing"
+                android:textColor="@color/white"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/txtHow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="120dp"
+                android:fontFamily="@font/kanit_medium"
+                android:text="2. การใช้งาน Application นี้ให้เริ่มจากการเลือกเมนู learning ก่อนเพื่อเข้าไปศึกษาโดยการฟังเสียง ดูรูปคลื่นสัญญาณและทำการอ่านคำอธิบายของเสียงปอดแต่ละแบบ หลังจากนั้นเข้าสู่เมนู testing เพื่อทำแบบทดสอบ"
+                android:textColor="@color/white"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/txtHow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="265dp"
+                android:fontFamily="@font/kanit_medium"
+                android:text="3. ในเมนู testing จะประกอบไปด้วย 2 part คือ part1 เป็น part ที่ทดสอบการฟังและ part2 เป็นpartที่ทดสอบทฤษฎี โดยก่อนจะทำแบบทดสอบนั้นจะต้องทำการ log in เพื่อเข้าสู่ระบบก่อน เมื่อทำแบบทดสอบแต่ละ part เสร็จจะมีคะแนนรวมปรากฏที่หน้าสุดท้ายของแต่ละ part ใน part1 สามารถเลือกได้ว่าจะทำแบบทดสอบ part2 ต่อหรือไม่ถ้าทำแบบทดสอบต่อให้เลือกเมนู part2 หากไม่ต้องให้เลือกเมนู log out เพื่อออกจากระบบ  "
+                android:textColor="@color/white"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/txtHow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="530dp"
+                android:fontFamily="@font/kanit_medium"
+                android:text="4. เมื่อทำแบบทดสอบเสร็จจะต้องออกจากระบบทุกครั้ง"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:layout_marginBottom="20dp"/>
+
+
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="850dp"
+        android:layout_marginTop="900dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/a"
+        android:src="@drawable/ic_baseline_close_24" />
+
+
+
+
+</com.google.android.material.card.MaterialCardView>
